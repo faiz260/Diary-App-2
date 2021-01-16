@@ -28,7 +28,7 @@ const DiaryEntriesList: FC = () => {
         });
     }
   }, [id, dispatch]);
-
+  console.log("Entries >>> ", entries)
   return (
     <div className="entries">
       <header>

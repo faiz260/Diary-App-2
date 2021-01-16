@@ -7,15 +7,14 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url("https://previews.123rf.com/images/khunaspix/khunaspix1204/khunaspix120400055/13091340-note-patch-diary-on-wood-texture-background.jpg");
   background-size: cover; */
 }
-
 
 html,
 body,
@@ -28,7 +27,7 @@ body,
 *:after {
   box-sizing: border-box;
 }
-.Loader{
+.Loader {
   display: flex;
   position: relative;
   justify-content: center;
@@ -40,11 +39,34 @@ body,
 .auth {
   display: flex;
   align-items: center;
+  flex-direction: column;
   height: 100%;
   background-image: url("https://previews.123rf.com/images/khunaspix/khunaspix1204/khunaspix120400055/13091340-note-patch-diary-on-wood-texture-background.jpg");
   background-size: cover;
 }
-
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  background: rgba(216, 193, 142, 0.638);
+  box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 4%;
+}
+.logo {
+  font-weight: 300;
+  font-size: 50px;
+  /* color: rgba(255, 255, 255, 0.809);
+  text-shadow: 2px 3px 1px rgba(255, 230, 37, 0.426); */
+  background-color: #ffd54dbd;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(130, 108, 38, 0.898) 0px 3px 3px;
+}
 .card {
   background: rgba(216, 193, 142, 0.638);
   padding: 3rem;
@@ -60,17 +82,17 @@ body,
   margin: 1rem auto;
   width: 100%;
 }
-.inputWrapper > input{
+.inputWrapper > input {
   background: rgba(255, 255, 255, 0.638);
 }
 
-input:not([type='checkbox']),
+input:not([type="checkbox"]),
 button {
   border-radius: 0.5rem;
   width: 100%;
 }
 
-input:not([type='checkbox']),
+input:not([type="checkbox"]),
 textarea {
   border: 2px solid rgba(0, 0, 0, 0.1);
   padding: 1em;
@@ -78,7 +100,7 @@ textarea {
   transition: var(--transition);
 }
 
-input:not([type='checkbox']):focus,
+input:not([type="checkbox"]):focus,
 textarea:focus {
   outline: none;
   border-color: var(--primary-color);
@@ -127,12 +149,12 @@ button:focus {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   height: 100%;
   overflow-y: scroll;
-  background-color:rgba(248, 223, 157, 0.713);
+  background-color: rgba(248, 223, 157, 0.713);
 }
 
 .two-cols .right {
   overflow-y: auto;
-  background-color:rgba(248, 223, 157, 0.713);
+  background-color: rgba(248, 223, 157, 0.713);
 }
 
 .title {
